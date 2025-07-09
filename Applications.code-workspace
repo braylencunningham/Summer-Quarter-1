@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../Applications"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Summer Quarter 1"
+	}
+}
