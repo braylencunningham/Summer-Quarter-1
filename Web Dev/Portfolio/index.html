@@ -10,7 +10,7 @@
     <div id="header">
         <div class = "container">
             <nav>
-                <img src="images/warriors.jpeg" class="logo">
+                <img src="images/street.jpeg" class="logo">
                 <ul>
                    <li><a href="home">Home</a></li>
                    <li><a href="home">About</a></li>
@@ -25,24 +25,83 @@
         </div>
     </div>
 </div>
-<!-- -----------------about ------------------------------->
+<!-- ----------------- about ------------------------------->
 <div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
                 <img src="images/braylen.jpeg">
             </div>
-            <div class="about-col-2"></div>
-            <h1> class = "sub-title">
-            </h1>
-            <p> My name is Braylen Cunningham. I live in Fairfield and I go to Rodriguez High School. I like to play video games,
-                hang out with friends, and travel.
-            </p>
-        </div class="tab-titles">
-        <p class="tab-links active link">Skills</p>
-        <p class="tab-links"
+            <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Hi my name is Braylen</p>
+
+             <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>  
+                <p class="tab-links" onclick="opentab('education')">Education</p>        
+        </div>
+    <div class="tab-contents active-tab" id="skills">
+        <ul>
+            <li><span>CA</span><br>Scholar</li>
+            <li><span>Rich 9</span><br>Hidden Genius Project</li>
+            <li><span>CA</span><br>Athlete</li>
+        </ul>
+        </div>
+        <div class="tab-contents" id = "experience">
+            <ul>
+                <li><span>July 2024 - August 2024 </span>Lifeguarding</li>
+                <li><span>2025 - </span>Hidden Genius </li>
+        </ul>
+        </div>
+        <div class="tab-contents" id = "education">
+            <ul>
+                            <li><span>2013 - 2019 </span>Elementary School</li>
+                            <li><span>2020 - 2024 </span>Middle School</li>
+                            <li><span>2024 - Current </span>High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>   
+</div>
+
+<!-----------------services---------------->
+<div id = services>
+    <div class="container">
+        <h1 class= "sub-title">My Services</h1>
+        <div class="services-list">
+            
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsbyClassName("tab-links");
+    var tabcontents = document.getElementsbyClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classlist.remove("active-link");
+        }
+        for(tab-content of tab-contents){
+            tab-content.classList.remove("active-tab");
+        }
+        event.currentTarget.classlist.add("active-link")
+        document.getElementById(tabname).classlist.add("active-tab");
+    }
+
+
+
+</script>
+
+
+
+
+
+
 
 </body>
 </html>
