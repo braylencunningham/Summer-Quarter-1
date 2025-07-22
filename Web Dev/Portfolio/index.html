@@ -36,11 +36,12 @@
             <h1 class="sub-title">About Me</h1>
             <p>Hi my name is Braylen</p>
 
-             <div class="tab-titles">
-                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                <p class="tab-links" onclick="opentab('experience')">Experience</p>  
-                <p class="tab-links" onclick="opentab('education')">Education</p>        
-        </div>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                <p class="tab-links" onclick="opentab('experience', event)">Experience</p>  
+                <p class="tab-links" onclick="opentab('education', event)">Education</p>        
+            </div>
+
     <div class="tab-contents active-tab" id="skills">
         <ul>
             <li><span>CA</span><br>Scholar</li>
@@ -68,43 +69,57 @@
 </div>
 
 <!-----------------services---------------->
-<div id = services>
-    <div class="container">
-        <h1 class= "sub-title">My Services</h1>
-        <div class="services-list">   
-        </div>
-            <h2>Web Design</h2>
-            <p>Python</p>
-            <a href="#">Learn More</a>
-        </div>
-         <div>
-            <h2>Web Design</h2>
-            <p>HTML Portfolio</p>
-            <a href="#">Learn More</a>
-        </div>
-        <div>
-            <h2>Web Design</h2>
-            <p>Coding</p>
-            <a href="#">Learn More</a>
-        <div>
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    
+    <div class="services-list">
+      <div>
+        <h2>Web Design</h2>
+        <p>Python</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div>
+        <h2>HTML Design</h2>
+        <p>HTML Portfolio</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div>
+        <h2>UX Designer</h2>
+        <p>Coding</p>
+        <a href="#">Learn More</a>
+      </div>
     </div>
-<div>
+<!----------------Portfolio-------------------->
+  <div id="Portfolio">
+<div class="container">
+    <h1 class="sub-title">My Work </h1>
+    <div class="work">
+        <img src="images/python.jpeg">
+    </div>
+<div class="work">
+    <img src="images/vsc.jpeg">
+</div>
+<div class="work">
+    <img src="images/hgp.jpeg">
 </div>
 
 <script>
 
-    var tablinks = document.getElementsbyClassName("tab-links");
-    var tabcontents = document.getElementsbyClassName("tab-contents");
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classlist.remove("active-link");
+    function opentab(tabname, event){
+        for (let tablink of tablinks){
+            tablink.classList.remove("active-link");
         }
-        for(tab-content of tab-contents){
-            tab-content.classList.remove("active-tab");
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
         }
-        event.currentTarget.classlist.add("active-link")
-        document.getElementById(tabname).classlist.add("active-tab");
+
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
     }
 
 
