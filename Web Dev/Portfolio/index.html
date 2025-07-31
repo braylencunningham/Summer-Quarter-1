@@ -1,136 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Braylen's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Braylen's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-    <div id="header">
-        <div class = "container">
-            <nav>
-                <img src="images/street.jpeg" class="logo">
-                <ul>
-                   <li><a href="home">Home</a></li>
-                   <li><a href="home">About</a></li>
-                   <li><a href="home">Services</a></li>
-                   <li><a href="home">Portfolio</a></li>
-                   <li><a href="home">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-text">
-                <p>Rich 9</p>
-            <h1>Hi, I'm<span> Braylen </span><br> from the Bay Area </h1>
-        </div>
-    </div>
-</div>
-<!-- ----------------- about ------------------------------->
-<div id="about">
+
+  <!-- Header Section -->
+  <header id="header">
     <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/braylen.jpeg">
-            </div>
-            <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p>Hi my name is Braylen</p>
-
-            <div class="tab-titles">
-                <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
-                <p class="tab-links" onclick="opentab('experience', event)">Experience</p>  
-                <p class="tab-links" onclick="opentab('education', event)">Education</p>        
-            </div>
-
-    <div class="tab-contents active-tab" id="skills">
+      <nav>
+        <img src="images/street.jpeg" alt="Street logo" class="logo" />
         <ul>
-            <li><span>CA</span><br>Scholar</li>
-            <li><span>Rich 9</span><br>Hidden Genius Project</li>
-            <li><span>CA</span><br>Athlete</li>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+      </nav>
+      <div class="header-text">
+        <p>Rich 9</p>
+        <h1>Hi, I'm <span>Braylen</span><br />from the Bay Area</h1>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/braylen.jpeg" alt="Braylen's profile photo" />
         </div>
-        <div class="tab-contents" id= "experience">
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Hi, my name is Braylen. I like to play video games, travel, and hang out with friends and family.
+            I have 2 siblings and I live in Fairfield, California. </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+            <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+            <p class="tab-links" onclick="opentab('education', event)">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
             <ul>
-                <li><span>July 2024 - August 2024 </span>Lifeguarding</li>
-                <li><span>2025 - </span>Hidden Genius </li>
-        </ul>
-        </div>
-        <div class="tab-contents" id= "education">
+              <li><span>CA</span><br />Scholar</li>
+              <li><span>Rich 9 Cohort</span><br />Hidden Genius Project</li>
+              <li><span>CA</span><br />Athlete</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
             <ul>
-                            <li><span>2013 - 2019 </span>Elementary School</li>
-                            <li><span>2020 - 2024 </span>Middle School</li>
-                            <li><span>2024 - Current </span>High School</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+              <li><span>July 2024 - August 2024</span><br />Lifeguarding</li>
+              <li><span>2025 - Ongoing</span><br />Hidden Genius Project</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2013 - 2019</span><br />Elementary School</li>
+              <li><span>2020 - 2024</span><br />Middle School</li>
+              <li><span>2024 - Present</span><br />High School</li>
+            </ul>
+          </div>
         </div>
-    </div>
-</div>
-
-<!-----------------services---------------->
-<div id="services">
-  <div class="container">
-    <h1 class="sub-title">My Services</h1>
-    
-    <div class="services-list">
-      <div>
-        <h2>Web Design</h2>
-        <p>Python</p>
-        <a href="#">Learn More</a>
-      </div>
-      <div>
-        <h2>HTML Design</h2>
-        <p>HTML Portfolio</p>
-        <a href="#">Learn More</a>
-      </div>
-      <div>
-        <h2>UX Designer</h2>
-        <p>Coding</p>
-        <a href="#">Learn More</a>
       </div>
     </div>
-<!----------------Portfolio-------------------->
-  <div id="Portfolio">
-<div class="container">
-    <h1 class="sub-title">My Work </h1>
-    <div class="work">
-        <img src="images/python.jpeg">
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <h2>Python</h2>
+          <p>Python development for dynamic websites.</p>
+          <a href="https://www.python.org" target="_blank">Learn More</a>
+        </div>
+        <div>
+          <h2>HTML</h2>
+          <p>Responsive HTML portfolio designs.</p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Learn More</a>
+        </div>
+        <div>
+          <h2>Hidden Genius Project</h2>
+          <p>Training Black male youth in tech, entrepreneurship, and leadership. </p>
+          <a href="https://www.hiddengeniusproject.org/" target="_blank">Learn More</a>
+        </div>
+      </div>
     </div>
-<div class="work">
-    <img src="images/vsc.jpeg">
-</div>
-<div class="work">
-    <img src="images/hgp.jpeg">
-</div>
+  </section>
 
-<script>
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">Some Things I Like To Do</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/playstation.jpeg" alt="playstation" />
+          <div class="layer">
+            <h3>Playstation</h3>
+            <p>I like playing games like NBA 2K and Madden.</p>
+            <a href="#" aria-label="View Python project"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
 
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+        <div class="work">
+          <img src="images/trip.jpeg" alt="Visual Studio Code project" />
+          <div class="layer">
+            <h3>Traveling</h3>
+            <p>I like traveling the world. I've been to the Bahamas, Las Vegas, Mexico,
+              Catalina Island, Alabama, and Florida.</p>
+            <a href="#" aria-label="View VS Code project"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
 
-    function opentab(tabname, event){
-        for (let tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
+        <div class="work">
+          <img src="images/track.jpeg" alt="Hidden Genius Project image" />
+          <div class="layer">
+            <h3>Track</h3>
+            <p>During the school year, I run track for my school. I run 200 and the 400 meters.</p>
+            <a href="#" aria-label="Learn more about HGP"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
 
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
+        <!-- Extra works hidden initially -->
+        <div class="work extra-work" style="display: none;">
+          <img src="images/music.jpeg" alt="music" />
+          <div class="layer">
+            <h3>Music</h3>
+            <p>I enjoy listening to artists like Drake, Lil Baby, and Brent Faiyaz.</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
 
-        event.currentTarget.classList.add("active-link")
-        document.getElementById(tabname).classList.add("active-tab");
+        <div class="work extra-work" style="display: none;">
+          <img src="images/hoopers.jpeg" alt="basketball" />
+          <div class="layer">
+            <h3>Basketball</h3>
+            <p>I love playing basketball and watching the Golden State Warriors.</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <a href="javascript:void(0);" class="btn" onclick="toggleSeeMore()" id="seeMoreBtn">See More</a>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section id="video">
+    <div class="container">
+      <h1 class="sub-title">Look at Curry Man </h1>
+      <p>Someone I'm A Fan Of: </p>
+      <div class="video-wrapper">
+        <iframe 
+          width="100%" 
+          height="400" 
+          src="https://www.youtube.com/embed/hUOfC2ilXak" 
+          title="My Goat" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fas fa-envelope"></i> braylen.cunningham@hgs.hiddengeniusproject.org</p>
+          <p><i class="fas fa-phone"></i> 510-775-5346</p>
+        </div>
+        <div class="contact-right">
+          <form id="contact-form">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="email" name="Email" placeholder="Your Email" required />
+            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2025 Braylen C. All rights reserved.</p>
+    </div>
+  </section>
+
+  <!-- JavaScript for Tabs, See More & Contact Form -->
+  <script>
+    // Tabs
+    const tabLinks = document.getElementsByClassName("tab-links");
+    const tabContents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabName, event) {
+      for (let link of tabLinks) {
+        link.classList.remove("active-link");
+      }
+      for (let content of tabContents) {
+        content.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabName).classList.add("active-tab");
     }
 
+    // See More toggle
+    function toggleSeeMore() {
+      const extraWorks = document.querySelectorAll(".extra-work");
+      const btn = document.getElementById("seeMoreBtn");
+      const isHidden = extraWorks[0].style.display === "none";
 
+      extraWorks.forEach(work => {
+        work.style.display = isHidden ? "block" : "none";
+      });
 
-</script>
+      btn.textContent = isHidden ? "See Less" : "See More";
+    }
 
+    // Contact form AJAX with FormSubmit
+    document.getElementById("contact-form").addEventListener("submit", function(e) {
+      e.preventDefault();
 
+      const form = e.target;
+      const data = new FormData(form);
 
-
-
-
+      fetch("https://formsubmit.co/ajax/braylen.cunningham@hgs.hiddengeniusproject.org", {
+        method: "POST",
+        headers: { 'Accept': 'application/json' },
+        body: data
+      })
+      .then(response => {
+        if (response.ok) {
+          alert("Message sent successfully!");
+          form.reset();
+        } else {
+          alert("Oops! There was a problem submitting your form");
+        }
+      })
+      .catch(() => alert("Oops! There was a problem submitting your form"));
+    });
+  </script>
 
 </body>
 </html>
